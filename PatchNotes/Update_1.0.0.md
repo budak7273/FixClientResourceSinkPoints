@@ -21,7 +21,7 @@ Modded items are unaffected as their sink point values are already loaded.
 This mod only needs to exist on the client side to function,
 however, server versions of the mod are published
 so that mods which must be installed on both sides can safely depend on this mod.
-The mod has have no effect if loaded server side.
+The mod has no effect if loaded server side.
 
 ## Credits
 
