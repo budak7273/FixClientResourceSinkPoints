@@ -18,7 +18,7 @@ void FFixClientResourceSinkPointsModule::ShutdownModule()
 }
 
 void Hook_SinkBeginPlay(AFGResourceSinkSubsystem* self) {
-	if (not self->HasAuthority()) {
+	if (!self->HasAuthority()) {
 		self->SetupPointData(EResourceSinkTrack::RST_Default, UFGResourceSinkSettings::GetPointsDataTable());
 		self->SetupPointData(EResourceSinkTrack::RST_Exploration, UFGResourceSinkSettings::GetExplorationPointsDataTable());
 	}
